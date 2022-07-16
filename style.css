@@ -1,0 +1,63 @@
+@font-face{
+  font-family: "NanumGothicCoding";
+  src: url("assets/NanumGothicCoding-Regular.ttf");
+}
+@font-face{
+  font-family: "NanumGothicCoding";
+  src: url("assets/NanumGothicCoding-Bold.ttf");
+  font-weight: bold;
+}
+
+body{
+  background-color: #fff8ed;
+  font-family: "NanumGothicCoding", monospace;
+  margin-bottom: 10px;
+}
+
+#content{
+  background-color: #fff8ed;
+}
+#header{
+  padding: 10px;
+}
+#sidebar{
+  padding: 20px;
+
+}
+.sidebar-button{
+  color: black;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: left;
+}
+#homepage-art{
+  margin: 40px 10px 10px;
+  height: auto;
+  width: 900px;
+}
+#homepage-text{
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+#homepage-text-static{
+  text-align: center;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: normal;
+}
+.cardfooters{
+  color: grey;
+  font-size: 12px;
+}
+.cardtext{
+  text-decoration: none;
+  color: black;
+}
+.card-img-top{
+  height: 20vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}

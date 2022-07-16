@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metatags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Willow Red's portfolio website">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Art, Design, WillowRed">
+    <meta name="author" content="Sara Alvarado">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--lightbox plugin-->
+    <link href="assets/lightbox/css/lightbox.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet">
+    <title>Willow Red</title>
+    <!-- Specific Theme per Page -->
+    <style>
+    #current-page-nav{
+      background-color: #B50000;
+      color: #fff8ed;
+      border-radius: 50px;
+    }
+    .home-button:hover{
+      color: black;
+    }
+    .illustration-button:hover{
+      color: #002ECF;
+    }
+    .fun-button:hover{
+      color: #00A510;
+    }
+    .about-button:hover{
+      color: #B50000;
+    }
+    h2{
+      color: #B50000;
+      margin-bottom: 20px;
+    }
+    .cardtext:hover{
+      text-decoration: none;
+      color: #B50000;
+    }
+    hr{
+      color: #B50000;
+    }
+    </style>
+
+  </head>
+
+  <body>
+    <!-- Overall Container -->
+    <div class="container" id="content">
+      <div class="container" id="header">
+        <div class="row">
+          <div class="col-6 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+            <img src="assets/redLogo.png" class="img-fluid" alt="WillowRed logo">
+          </div>
+        </div>
+      </div>
+    <!--nav-column-->
+    <div class="row therow">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-2">
+    <div class="container-md" id="sidebar">
+        <div class="row">
+          <a href="index.html" class="sidebar-button home-button">Home</a>
+        </div>
+        <div class="row">
+          <a href="#" class="sidebar-button design-button" id="current-page-nav">Design *</a>
+        </div>
+        <div class="row">
+          <a href="illusPage.html" class="sidebar-button illustration-button">Illustration</a>
+        </div>
+        <div class="row">
+          <a href="fun.html" class="sidebar-button fun-button">Fun</a>
+        </div>
+        <div class="row">
+          <a href="about.html" class="sidebar-button about-button">About</a>
+        </div>
+      </div>
+    </div>
+    <!-- End of nav bar -->
+    <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-10">
+      <h2><strong>Design Work</strong></h2>
+      <hr>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 g-4">
+    <div class="col">
+      <a href="assets/studentLife/posts.png" class="cardtext" data-lightbox="student-life" data-alt="instagram posts">
+      <div class="card h-100">
+        <img src="assets/studentLife/posts.png" class="card-img-top" alt="Instagram graphic about an internship program">
+        <div class="card-body">
+          <h5 class="card-title"><strong>USC Student Life Graphics</strong></h5>
+          <p class="card-text">Social media graphics for USC's student life Instagram page.</p>
+        </div>
+        <div class="card-footer bg-transparent cardfooters">Graphic Design + Illustration</div>
+      </div>
+    </a>
+    <a href="assets/studentLife/traveller.png" class="cardtext" data-lightbox="student-life" data-alt="illustrations of USC's mascot, traveler"></a>
+    <a href="assets/studentLife/stories.png" class="cardtext" data-lightbox="student-life" data-alt="instagram story posts."></a>
+    </div>
+    <div class="col">
+      <a href="assets/branding/media.png" class="cardtext" data-lightbox="branding" data-alt="Media pass design project.">
+      <div class="card h-100">
+        <img src="assets/branding/media.png" class="card-img-top" alt="Media pass design project.">
+        <div class="card-body">
+          <h5 class="card-title"><strong>USC Student Affairs Branding</strong></h5>
+          <p class="card-text">Media pass and t-shirt designs for the Office of the Vice President of Student Affairs department.</p>
+        </div>
+        <div class="card-footer bg-transparent cardfooters">Graphic Design + Branding</div>
+      </div>
+    </a>
+    <a href="assets/branding/media1.png" class="cardtext" data-lightbox="branding" data-alt="Media pass design project, second slide."></a>
+    <a href="assets/branding/tshirt.png" class="cardtext" data-lightbox="branding" data-alt="T-shirt design project."></a>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    <!--Lightbox Plugin-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="assets/lightbox/js/lightbox.js"></script>
+
+  </body>
+</html>
