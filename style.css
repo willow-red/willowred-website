@@ -31,20 +31,19 @@ body{
   text-align: left;
 }
 #homepage-art{
-  margin: 40px 10px 10px;
   height: auto;
-  width: 900px;
+  width: 700px;
 }
 #homepage-text{
   text-align: center;
-  margin: 10px;
-  font-size: 30px;
+  font-size: calc(0.75em + 1.2vmin);
   font-weight: bold;
+  width: 60%;
+  left: 25%;
+  top: 25%;
 }
 #homepage-text-static{
   text-align: center;
-  margin: 10px;
-  font-size: 15px;
   font-weight: normal;
 }
 .cardfooters{
