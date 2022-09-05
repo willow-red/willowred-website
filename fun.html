@@ -40,11 +40,11 @@
     hr{
       color: #00A510;
     }
-    .card-link{
-      color: #00A510;
+    .link:hover{
+      background: url('assets/sprites.svg') no-repeat -59px -100px;
     }
-    .card-link:hover{
-      color: black;
+    .github:hover{
+      background: url('assets/sprites.svg') no-repeat -191px -100px;
     }
     </style>
 
@@ -74,7 +74,7 @@
           <a href="illusPage.html" class="sidebar-button illustration-button">Illustration</a>
         </div>
         <div class="row">
-          <a href="#" class="sidebar-button fun-button" id="current-page-nav">Fun *</a>
+          <a href="#" class="sidebar-button fun-button" id="current-page-nav">Web *</a>
         </div>
         <div class="row">
           <a href="about.html" class="sidebar-button about-button">About</a>
@@ -82,36 +82,104 @@
       </div>
     </div>
     <!-- End of nav bar -->
-    <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-10">
-      <h2 class="page-header"><strong>Fun Projects!</strong></h2>
+    <div class="col-12 col-lg-8 col-xl-10">
+      <h2 class="page-header"><strong>Web Projects</strong></h2>
+      <hr>
+      <div class="row projectDisplay col-12 col-xl-10 mx-auto">
+        <!--must size all images to be the same width-->
+        <div class="projectText col-12 col-lg-6 col-xl-6">
+          <h2 class="projectHeader">Growth Tracker Browser Extension</h2>
+          <p class="projectSummary">A plant-themed mood tracker and journal for the browser.</p>
+          <hr>
+          <div class="techUsed">
+            <p>Javascript + HTML + CSS</p>
+          </div>
+          <div class="projectLinks">
+            <a class="projectIcon github" href="https://github.com/Namesnipes/Growth-Tracker" target="_blank"></a>
+            <a class="projectIcon link" href="https://chrome.google.com/webstore/detail/growth-tracker/pkbbochahepbkpkkidbhhdjhmjafgncm?hl=en&authuser=0" target="_blank"></a>
+            <a class="projectIcon link" href="https://addons.mozilla.org/en-US/firefox/addon/growth-tracker/" target="_blank"></a>
+          </div>
+        </div>
+        <div class="projectImage col-12 col-lg-6 col-xl-6">
+          <img src="assets/growthTracker/GrowthTracker.png" class="container" alt="Growth Tracker: Mood Tracker and Daily Journal">
+        </div>
+      </div>
+
+      <div class="row projectDisplay col-12 col-xl-10 mx-auto">
+        <!--must size all images to be the same width-->
+        <div class="projectText col-12 col-lg-6 col-xl-6">
+          <h2 class="projectHeader">Game of Life</h2>
+          <p class="projectSummary">Conway's Game of Life. Includes customizeable board and cell colors! Fun fact: A Game of Life assignment
+            with MatLab was my first successful code, and was what made me want to learn programming :)</p>
+          <hr>
+          <div class="techUsed">
+            <p>Javascript + HTML + CSS</p>
+          </div>
+          <div class="projectLinks">
+            <a class="projectIcon github" href="https://github.com/willow-red/GameOfLife" target="_blank"></a>
+            <a class="projectIcon link" href="https://willow-red.github.io/GameOfLife/" target="_blank"></a>
+          </div>
+        </div>
+        <div class="projectImage col-12 col-lg-6 col-xl-6">
+          <img src="assets/fun/gameOfLife.png" class="container" alt="Game of Life">
+        </div>
+      </div>
+
+      <div class="row projectDisplay col-12 col-xl-10 mx-auto">
+        <!--must size all images to be the same width-->
+        <div class="projectText col-12 col-lg-6 col-xl-6">
+          <h2 class="projectHeader">Friend Machine</h2>
+          <p class="projectSummary">Art project of a "computer friend" where your relationship with it increases
+          as you feed it likes.</p>
+          <hr>
+          <div class="techUsed">
+            <p>Javascript + HTML + CSS</p>
+          </div>
+          <div class="projectLinks">
+            <a class="projectIcon github" href="https://github.com/willow-red/friendmachine" target="_blank"></a>
+            <a class="projectIcon link" href="https://willow-red.github.io/friendmachine/" target="_blank"></a>
+          </div>
+        </div>
+        <div class="projectImage col-12 col-lg-6 col-xl-6">
+          <img src="assets/fun/friendMachine.png" class="container" alt="Friend Machine">
+        </div>
+      </div>
+
+      <div class="row projectDisplay col-12 col-xl-10 mx-auto">
+        <!--must size all images to be the same width-->
+        <div class="projectText col-12 col-lg-6 col-xl-6">
+          <h2 class="projectHeader">Hi-Stress</h2>
+          <p class="projectSummary">Hackathon project for WinHacks. Web game where the player
+          has to balance different bars representing responsibilities of college students.
+          The goal of the game is to teach about prioritising mental health in order to succeed!</p>
+          <hr>
+          <div class="techUsed">
+            <p>Javascript + HTML + CSS</p>
+          </div>
+          <div class="projectLinks">
+            <a class="projectIcon github" href="https://github.com/Namesnipes/hiStress" target="_blank"></a>
+            <a class="projectIcon link" href="https://namesnipes.github.io/hiStress/" target="_blank"></a>
+          </div>
+        </div>
+        <div class="projectImage col-12 col-lg-6 col-xl-6">
+          <img src="assets/fun/hiStress.png" class="container" alt="hiStress">
+        </div>
+      </div>
+
+      </div>
+
+    <div class="col-12">
+      <h2 class="page-header"><strong>Other Coding Projects</strong></h2>
       <hr>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 g-4">
     <div class="col">
       <div class="card h-100">
-        <img src="assets/fun/friend.png" class="card-img-top" alt="Friend Machine.">
         <div class="card-body">
-          <h5 class="card-title"><strong>Friend Machine</strong></h5>
-          <p class="card-text">Art project of a "computer friend" where your relationship with it increases
-          as you feed it likes. Made with my partner, @namesnipes. I worked on the art, html, and css.</p>
-          <a href="https://willow-red.github.io/friendmachine/" target="_blank" class="card-link">Play It!</a>
-          <a href="https://github.com/willow-red/friendmachine" target="_blank" class="card-link">Github</a>
+          <h5 class="card-title"><strong>University Trail</strong></h5>
+          <p class="card-text">Console text-based game that mimics the Oregon Trail, but with a theme of university.</p>
+          <a class="projectIcon github" href="https://github.com/willow-red/University-Trail" target="_blank"></a>
         </div>
-        <div class="card-footer bg-transparent cardfooters">JavaScript + HTML5 + CSS</div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/fun/hiStress.png" class="card-img-top" alt="Hi-Stress.">
-        <div class="card-body">
-          <h5 class="card-title"><strong>Hi-Stress</strong></h5>
-          <p class="card-text">Hackathon project for WinHacks. Web game where the player
-          has to balance different bars representing responsibilities of college students.
-          The goal of the game is to teach about prioritising mental health in order to succeed! Made
-          with @namesnipes. I worked on the art, html, and css.</p>
-          <a href="https://namesnipes.github.io/hiStress/" target="_blank" class="card-link">Play It!</a>
-          <a href="https://github.com/Namesnipes/hiStress" target="_blank" class="card-link">Github</a>
-        </div>
-        <div class="card-footer bg-transparent cardfooters">JavaScript + HTML5 + CSS</div>
+        <div class="card-footer bg-transparent cardfooters">Java</div>
       </div>
     </div>
   </div>
