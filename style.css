@@ -1,16 +1,36 @@
 @font-face{
   font-family: "NanumGothicCoding";
-  src: url("assets/NanumGothicCoding-Regular.ttf");
+  src: url("assets/fonts/NanumGothicCoding-Regular.ttf");
 }
 @font-face{
   font-family: "NanumGothicCoding";
-  src: url("assets/NanumGothicCoding-Bold.ttf");
+  src: url("assets/fonts/NanumGothicCoding-Bold.ttf");
   font-weight: bold;
+}
+@font-face{
+  font-family: "AppleGaramond";
+  src: url("assets/fonts/AppleGaramond.ttf");
+}
+@font-face{
+  font-family: "AppleGaramond";
+  src: url("assets/fonts/AppleGaramond-Bold.ttf");
+  font-weight: bold;
+}
+@font-face{
+  font-family: "AppleGaramond";
+  src: url("assets/fonts/AppleGaramond-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face{
+  font-family: "AppleGaramond";
+  src: url("assets/fonts/AppleGaramond-Italic.ttf");
+  font-style: italic;
 }
 
 body{
   background-color: #fff8ed;
-  font-family: "NanumGothicCoding", monospace;
+  font-family: "AppleGaramond", monospace;
   margin-bottom: 10px;
 }
 
@@ -29,6 +49,7 @@ body{
   text-decoration: none;
   line-height: 40px;
   text-align: left;
+  font-size: 18px;
 }
 #homepage-art{
   height: auto;
@@ -36,8 +57,9 @@ body{
 }
 #homepage-text{
   text-align: center;
-  font-size: calc(0.75em + 1.2vmin);
+  font-size: calc(0.8em + 1.2vmin);
   font-weight: bold;
+  font-style: italic;
   width: 60%;
   left: 25%;
   top: 25%;
@@ -59,4 +81,66 @@ body{
   width: 100%;
   object-fit: cover;
   object-position: top;
+}
+.page-header{
+  font-size: 40px;
+  font-style: italic;
+}
+
+
+/*project*/
+.projectDisplay{
+  background-color: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.projectHeader{
+  font-weight: bold;
+}
+.projectSummary{
+  font-weight: normal;
+  font-size: 18px;
+}
+.projectText{
+  background-color: none;
+  padding: 15px;
+}
+.techUsed{
+  font-family: "NanumGothicCoding", monospace;
+  font-size: 15px;
+}
+.projectLinks{
+  background-color: none;
+}
+.projectIcon{
+  display: inline-block;
+  margin: 0px 5px;
+}
+.learnMore{
+  border: 1px solid black;
+  width: 110px;
+  padding: 5px;
+  font-size: 21px;
+  text-align: center;
+  border-radius: 20px;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+/*sprites*/
+.github{
+  background: url('assets/sprites.svg') no-repeat -191px -12px;
+	width: 24px;
+	height: 24px;
+}
+.link{
+  background: url('assets/sprites.svg') no-repeat -59px -12px;
+	width: 24px;
+	height: 25px;
+}
+.instagram{
+  background: url('assets/sprites.svg') no-repeat -147px -12px;
+	width: 24px;
+	height: 25px;
 }
