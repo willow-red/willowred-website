@@ -28,28 +28,25 @@
   font-style: italic;
 }
 
+
 body{
-  background-color: #fff8ed;
+  background-color: #eae5e0;
   font-family: "AppleGaramond", monospace;
   margin-bottom: 50px;
+  margin: 3em;
 }
 
-#content{
-  background-color: #fff8ed;
-}
-#header{
-  padding: 10px;
-}
-#sidebar{
-  padding: 20px;
-
+#logo-header{
+  margin-bottom: 1em;
+  padding: 0px;
 }
 .sidebar-button{
-  color: black;
-  text-decoration: none;
-  line-height: 40px;
-  text-align: left;
-  font-size: 18px;
+  margin: 4px;
+  font-size: 12px;
+  padding: 4px;
+}
+#sidebar-button-container{
+  width: fit-content;
 }
 #homepage-art{
   height: auto;
@@ -68,25 +65,18 @@ body{
   text-align: center;
   font-weight: normal;
 }
-.cardfooters{
-  color: grey;
-  font-size: 12px;
+.pg-header-text{
+  font-size: 16px;
+  padding-left: 8px;
 }
-.cardtext{
-  text-decoration: none;
-  color: black;
-}
-.card-img-top{
-  height: 20vh;
-  width: 100%;
+.thumbnail-img{
+  height: 18em;
+  width: 20em;
   object-fit: cover;
-  object-position: top;
 }
-.page-header{
-  font-size: 40px;
-  font-style: italic;
+.thumbnail-img:hover{
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
 }
-
 
 /*project*/
 .projectDisplay{

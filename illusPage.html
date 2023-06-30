@@ -5,203 +5,211 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Willow Red's portfolio website">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Art, Design, WillowRed">
+    <meta name="keywords"
+      content="HTML, CSS, JavaScript, Portfolio, Art, Design, WillowRed">
     <meta name="author" content="Sara Alvarado">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--lightbox plugin-->
-    <link href="assets/lightbox/css/lightbox.css" rel="stylesheet"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous">
+    <!-- PhotoViewer CSS -->
+    <link href="./photoViewer/photoviewer/dist/photoviewer.css" rel="stylesheet">
+    <!--windows98 css-->
+    <link rel="stylesheet" href="98css/style.css">
+    <!--my css-->
     <link href="style.css" rel="stylesheet">
     <title>Willow Red</title>
     <!-- Specific Theme per Page -->
     <style>
-    #current-page-nav{
-      background-color: #002ECF;
-      color: #fff8ed;
-      border-radius: 50px;
-    }
-    .home-button:hover{
-      color: black;
-    }
-    .design-button:hover{
-      color: #B50000;
-    }
-    .fun-button:hover{
-      color: #00A510;
-    }
-    .about-button:hover{
-      color: #B50000;
-    }
-    h2{
-      color: #002ECF;
-      margin-bottom: 20px;
-    }
-    .cardtext:hover{
-      text-decoration: none;
-      color: #002ECF;
-    }
-    hr{
-      color: #002ECF;
-    }
+
     </style>
 
   </head>
 
   <body>
     <!-- Overall Container -->
-    <div class="container" id="content">
-      <div class="container" id="header">
-        <div class="row">
-          <div class="col-6 col-sm-5 col-md-4 col-lg-3 col-xl-2">
-            <img src="assets/blueLogo.png" class="img-fluid" alt="WillowRed logo">
+    <div class="container">
+      <!--nav-column-->
+      <div class="row therow">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-2">
+
+          <div id="logo-header" class="row">
+            <a href="index.html"><img src="assets/logoGif.gif" class="img-fluid"
+                alt="WillowRed logo"></a>
+          </div>
+
+          <div class="window" style="width: 100%">
+            <div class="title-bar">
+              <div class="title-bar-text">Navigation</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <div id="sidebar-button-container">
+                <button onclick="window.location.href='artPage.html';"
+                  class="sidebar-button">Art</button>
+                <button onclick="window.location.href='illusPage.html';"
+                  class="sidebar-button">Illustration</button>
+                <button onclick="window.location.href='fun.html';"
+                  class="sidebar-button">Interactive</button>
+                <button onclick="window.location.href='about.html';"
+                  class="sidebar-button">About</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of nav bar -->
+        <div
+          class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-9 ms-lg-5 mt-lg-0 mt-4">
+          <div class="window mb-3" style="width: 100%">
+            <div class="title-bar mb-1">
+              <div class="pg-header-text title-bar-text">Illustration
+                ₊‧°𐐪♡𐑂°‧₊</div>
+              <div class="title-bar-controls">
+                <button aria-label="Help"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <p>⌄⌄⌄ Larger Illustration Projects ⌄⌄⌄</p>
+            <button onclick="window.open('https://issuu.com/willowred/docs/cosmicbloom', '_blank')" class="sidebar-button">Cosmic Bloom Comic ➢</button>
+            <button onclick="window.open('https://issuu.com/willowred/docs/intermissioncyber-compressed', '_blank')" class="sidebar-button">Intermission: Cyber ➢</button>
+          </div>
+          <!--Image Gallery-->
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 g-4">
+
+            <a data-gallery="manual" data-title="Angel Scraps"
+              href="./assets/art/notebook.png">
+              <img class="img-fluid thumbnail-img"
+                src="./assets/art/notebook.png" alt="Angel Scraps artwork">
+            </a>
+            <a data-gallery="manual" data-title="Plush Fox"
+              href="./assets/art/foxes.png">
+              <img class="img-fluid thumbnail-img" src="./assets/art/foxes.png"
+                alt="Plush Fox artwork">
+            </a>
+            <a data-gallery="manual" data-title="Shapes"
+              href="./assets/art/abstract.png">
+              <img class="img-fluid thumbnail-img"
+                src="./assets/art/abstract.png"
+                alt="Shape artwork">
+            </a>
+            <a data-gallery="manual" data-title="Zelda Frog"
+              href="./assets/art/zeldaFrog.png">
+              <img class="img-fluid thumbnail-img"
+                src="./assets/art/zeldaFrog.png"
+                alt="Plush Fox artwork">
+            </a>
+            <a data-gallery="manual" data-title="RPG Characters"
+              href="./assets/art/Characters.png">
+              <img class="img-fluid thumbnail-img"
+                src="./assets/art/Characters.png"
+                alt="Fantasy Character artwork">
+            </a>
+            <a data-gallery="manual" data-title="RPG Map"
+              href="./assets/art/map.png">
+              <img class="img-fluid thumbnail-img" src="./assets/art/map.png"
+                alt="Fantasy Map artwork">
+            </a>
+            <a data-gallery="manual" data-title="Playing Cards"
+              href="./assets/art/cards.png">
+              <img class="img-fluid thumbnail-img" src="./assets/art/cards.png"
+                alt="Playing Cards artwork">
+            </a>
+            <a data-gallery="manual" data-title="Comfort"
+              href="./assets/art/Comfort.png">
+              <img class="img-fluid thumbnail-img"
+                src="./assets/art/Comfort.png"
+                alt="Comfort artwork">
+            </a>
+            <a data-gallery="manual" data-title="Worm World"
+              href="./assets/art/wormWorld.png">
+              <img class="img-fluid thumbnail-img"
+                src="./assets/art/wormWorld.png"
+                alt="Worm on String artwork">
+            </a>
+            <a data-gallery="manual" data-title="NOVA Mural"
+              href="./assets/art/NOVA_Mural.png">
+              <img class="img-fluid thumbnail-img"
+                src="./assets/art/NOVA_Mural.png"
+                alt="NOVA artwork">
+            </a>
+            <a data-gallery="manual" data-title="Sky Thoughts"
+              href="./assets/art/Sky_Thoughts.png">
+              <img class="img-fluid thumbnail-img"
+                src="./assets/art/Sky_Thoughts.png"
+                alt="Sky Thoughts artwork">
+            </a>
+            <a data-gallery="manual" data-title="What Do They Call Me?"
+              href="./assets/art/What_Do_They_Call_Me.png">
+              <img class="img-fluid thumbnail-img"
+                src="./assets/art/What_Do_They_Call_Me.png"
+                alt="What do they call me artwork">
+            </a>
+            <a data-gallery="manual" data-title="What Would I Want?"
+              href="./assets/art/What_Would_I_Want_Poster.png">
+              <img class="img-fluid thumbnail-img"
+                src="./assets/art/What_Would_I_Want_Poster.png"
+                alt="What Would I want? artwork">
+            </a>
+            <a data-gallery="manual" data-title="Bubbles"
+              href="./assets/art/bubbles.jpeg">
+              <img class="img-fluid thumbnail-img"
+                src="./assets/art/bubbles.jpeg"
+                alt="Bubbles artwork">
+            </a>
+            <a data-gallery="manual" data-title="Mushroom Pattern"
+              href="./assets/art/Mushroom_pattern.png">
+              <img class="img-fluid thumbnail-img"
+                src="./assets/art/Mushroom_pattern.png"
+                alt="Mushroom Pattern artwork">
+            </a>
           </div>
         </div>
       </div>
-    <!--nav-column-->
-    <div class="row therow">
-    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-2">
-    <div class="container-md" id="sidebar">
-        <div class="row">
-          <a href="index.html" class="sidebar-button home-button">Home</a>
-        </div>
-        <div class="row">
-          <a href="designPage.html" class="sidebar-button design-button">Design</a>
-        </div>
-        <div class="row">
-          <a href="#" class="sidebar-button illustration-button" id="current-page-nav">Illustration *</a>
-        </div>
-        <div class="row">
-          <a href="fun.html" class="sidebar-button fun-button">Web</a>
-        </div>
-        <div class="row">
-          <a href="about.html" class="sidebar-button about-button">About</a>
-        </div>
-      </div>
     </div>
-    <!-- End of nav bar -->
-    <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-10">
-      <h2 class="page-header"><strong>Illustration Work</strong></h2>
-      <hr>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 g-4">
-    <div class="col">
-      <a href="assets/art/digital.png" class="cardtext" data-lightbox="digital" data-title="Game of Life">
-      <div class="card h-100">
-        <img src="assets/art/digital.png" class="card-img-top" alt="Game of Life">
-        <div class="card-body">
-          <h5 class="card-title"><strong>Game of Life</strong></h5>
-          <p class="card-text">2022<br>Inspired by Conway's Game of Life, a reflection on my life via the machine
-            and the different levels of my personalities online.</p>
-        </div>
-        <div class="card-footer bg-transparent cardfooters">Procreate + Photoshop + Game of Life program +
-        code lines courtesy of Processing.org</div>
-      </div>
-      </a>
-    </div>
-    <div class="col">
-      <a href="assets/art/notebook.png" class="cardtext" data-lightbox="notebook" data-title="Notebook">
-      <div class="card h-100">
-        <img src="assets/art/notebook.png" class="card-img-top" alt="Character art/collage.">
-        <div class="card-body">
-          <h5 class="card-title"><strong>Angel Scrapbook</strong></h5>
-          <p class="card-text">2022</p>
-        </div>
-        <div class="card-footer bg-transparent cardfooters">Procreate + Canva stickers</div>
-      </div>
-    </a>
-    </div>
-    <div class="col">
-      <a href="assets/art/Characters.png" class="cardtext" data-lightbox="characters" data-title="RPG Characters">
-      <div class="card h-100">
-        <img src="assets/art/Characters.png" class="card-img-top" alt="Fantasy character art">
-        <div class="card-body">
-          <h5 class="card-title"><strong>RPG Characters</strong></h5>
-          <p class="card-text">2022<br>RPG character poster and world map in a comic book style.</p>
-        </div>
-        <div class="card-footer bg-transparent cardfooters">Procreate</div>
-      </div>
-    </a>
-    <a href="assets/art/map.png" class="cardtext" data-lightbox="characters" data-title="RPG World Map"></a>
-    </div>
-    <div class="col">
-      <a href="assets/art/emptyno1.png" class="cardtext" data-lightbox="empty" data-title="Hide & Seek">
-      <div class="card h-100">
-        <img src="assets/art/emptyno1.png" class="card-img-top" alt="Drawing of a character in a city photo background.">
-        <div class="card-body">
-          <h5 class="card-title"><strong>Hide & Seek</strong></h5>
-          <p class="card-text">2022<br>Tripdych made in response to the notion of dissociation.</p>
-        </div>
-        <div class="card-footer bg-transparent cardfooters">Procreate + Photo + Photoshop</div>
-      </div>
-    </a>
-    <a href="assets/art/emptyno2.png" class="cardtext" data-lightbox="empty" data-title="Hide & Seek"></a>
-    <a href="assets/art/emptyno3.png" class="cardtext" data-lightbox="empty" data-title="Hide & Seek"></a>
-    </div>
-    <div class="col">
-      <a href="assets/art/cards.png" class="cardtext" data-lightbox="cards" data-title="Card Colors">
-      <div class="card h-100">
-        <img src="assets/art/cards.png" class="card-img-top" alt="Drawing of the two card colors in the style of a playing card.">
-        <div class="card-body">
-          <h5 class="card-title"><strong>Card Colors</strong></h5>
-          <p class="card-text">2022</p>
-        </div>
-        <div class="card-footer bg-transparent cardfooters">Procreate</div>
-      </div>
-    </a>
-    </div>
-    <div class="col">
-      <a href="assets/art/foxes.png" class="cardtext" data-lightbox="fox" data-title="Fox Stuffy">
-      <div class="card h-100">
-        <img src="assets/art/foxes.png" class="card-img-top" alt="Drawing of foxes.">
-        <div class="card-body">
-          <h5 class="card-title"><strong>Fox Stuffy</strong></h5>
-          <p class="card-text">2022<br>Inspired by a fox stuffy, a representation of the spirit of a real fox
-          that a child would imagine a representation fox, or stuffed animal, to hold.</p>
-        </div>
-        <div class="card-footer bg-transparent cardfooters">Pen and Ink</div>
-      </div>
-    </a>
-    </div>
-    <div class="col">
-      <a href="assets/art/Comfort.png" class="cardtext" data-lightbox="comfort" data-title="Comfort">
-      <div class="card h-100">
-        <img src="assets/art/Comfort.png" class="card-img-top" alt="Drawing of a girl relaxing in her bedroom.">
-        <div class="card-body">
-          <h5 class="card-title"><strong>Comfort</strong></h5>
-          <p class="card-text">2022<br>Made to represent the mood of comfort.</p>
-        </div>
-        <div class="card-footer bg-transparent cardfooters">Procreate</div>
-      </div>
-    </a>
-    </div>
-    <div class="col">
-      <a href="assets/DailyTrojan/WomenInMusic.jpeg" class="cardtext" data-lightbox="daily" data-title="Women in Music">
-      <div class="card h-100">
-        <img src="assets/DailyTrojan/WomenInMusic.jpeg" class="card-img-top" alt="Record player drawing.">
-        <div class="card-body">
-          <h5 class="card-title"><strong>Daily Trojan Illustrations</strong></h5>
-          <p class="card-text">2020<br>Illustrations that accompanied articles online on USC's
-          student-run publication, The Daily Trojan.</p>
-        </div>
-        <div class="card-footer bg-transparent cardfooters">Procreate</div>
-      </div>
-    </a>
-    <a href="assets/DailyTrojan/Framing_Britney.jpeg" class="cardtext" data-lightbox="daily" data-title="Framing Britney"></a>
-    <a href="assets/DailyTrojan/WomensHisotryMonthPlaylist.jpeg" class="cardtext" data-lightbox="daily" data-title="Women's History Month Playlist"></a>
-    <a href="assets/DailyTrojan/Urban_Trees.jpeg" class="cardtext" data-lightbox="daily" data-title="Urban Trees"></a>
-    <a href="assets/DailyTrojan/Pop_Pandemic.jpeg" class="cardtext" data-lightbox="daily" data-title="Pop Pandemic"></a>
-    <a href="assets/DailyTrojan/TheBeatLivesOn.jpeg" class="cardtext" data-lightbox="daily" data-title="The Beat Lives On"></a>
-    <a href="assets/DailyTrojan/USCLaCovid.jpeg" class="cardtext" data-lightbox="daily" data-title="USC, LA, and Covid"></a>
-    </div>
-  </div>
-</div>
-</div>
-    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
 
-    <!--Lightbox Plugin-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-    <script src="assets/lightbox/js/lightbox.js"></script>
+    <!-- Photoviewer file -->
+    <script src="./photoViewer/photoviewer/dist/photoviewer.js"></script>
+    <script>
+      $('[data-gallery=manual]').click(function (e) {
+
+      e.preventDefault();
+
+      var items = [],
+        // get index of element clicked
+        options = {
+          index: $(this).index(),
+          footerToolbar: ['zoomIn', 'zoomOut', 'prev', 'next'],
+          gapThreshold: 0.1,
+          icons: {
+            maximize: '<img src="./98css/icon/maximize.svg"></img>',
+            close: '<img src="./98css/icon/close.svg"></img>'
+          },
+        };
+
+      // looping to create images array
+      $('[data-gallery=manual]').each(function () {
+        let src = $(this).attr('href');
+        items.push({
+          src: src,
+          title: $(this).attr('data-title')
+        });
+      });
+
+      new PhotoViewer(items, options);
+
+      });
+    </script>
 
   </body>
 </html>
