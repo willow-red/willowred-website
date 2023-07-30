@@ -12,7 +12,13 @@
  * Copyright (c) 2018 nzbin
  * Released under MIT License
  */
-
+ @font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url("../98css/fonts/converted/ms_sans_serif_bold.woff") format("woff");
+  src: url("../98css/fonts/converted/ms_sans_serif_bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
 .photoviewer-modal {
   position: absolute;
   z-index: 1090;
@@ -114,8 +120,8 @@
 }
 
 .photoviewer-title {
-  padding: 8px 10px;
-  font-size: 14px;
+  padding: 10px 10px;
+  font-size: 12px;
   line-height: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -124,6 +130,9 @@
   -ms-user-select: none;
   user-select: none;
   overflow: hidden;
+  color: white;
+  font-family: "Pixelated MS Sans Serif", sans-serif;
+  font-weight: bold;
 }
 
 .photoviewer-stage {
