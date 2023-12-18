@@ -1,112 +1,126 @@
-@font-face{
-  font-family: "NanumGothicCoding";
-  src: url("assets/fonts/NanumGothicCoding-Regular.ttf");
-}
-@font-face{
-  font-family: "NanumGothicCoding";
-  src: url("assets/fonts/NanumGothicCoding-Bold.ttf");
-  font-weight: bold;
-}
-@font-face{
+@font-face {
   font-family: "AppleGaramond";
   src: url("assets/fonts/AppleGaramond.ttf");
 }
-@font-face{
+
+@font-face {
   font-family: "AppleGaramond";
   src: url("assets/fonts/AppleGaramond-Bold.ttf");
   font-weight: bold;
 }
-@font-face{
+
+@font-face {
   font-family: "AppleGaramond";
   src: url("assets/fonts/AppleGaramond-BoldItalic.ttf");
   font-weight: bold;
   font-style: italic;
 }
-@font-face{
+
+@font-face {
   font-family: "AppleGaramond";
   src: url("assets/fonts/AppleGaramond-Italic.ttf");
   font-style: italic;
 }
 
-
-body{
+body {
   background-color: #eae5e0;
-  font-family: "AppleGaramond", monospace;
-  margin-bottom: 50px;
-  margin: 3em;
+  font-family: "AppleGaramond", serif;
+  margin: 5em;
 }
 
-#logo-header{
+#logo-header {
   margin-bottom: 1em;
   padding: 0px;
 }
-.sidebar-button{
+
+.sidebar-button {
   margin: 4px;
   font-size: 12px;
-  padding: 4px;
+  padding: 5px;
 }
-#sidebar-button-container{
-  width: fit-content;
+#sidebar-button-container .sidebar-button{
+  display: block;
+  width: 80%;
+  margin: 4px auto;
 }
-#homepage-art{
+#sidebar-button-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#homepage-art {
   height: auto;
   width: 700px;
 }
-#homepage-text{
+
+#homepage-text {
   text-align: center;
   font-size: calc(0.8em + 1.2vmin);
   font-weight: bold;
   font-style: italic;
-  width: 60%;
-  left: 25%;
-  top: 25%;
+  width: 75%;
+  left: 18%;
+  top: 28%;
 }
-#homepage-text-static{
+
+#homepage-text-static {
   text-align: center;
   font-weight: normal;
+  margin-bottom: 0.4em;
 }
-.pg-header-text{
+
+.pg-header-text {
   font-size: 16px;
   padding-left: 8px;
 }
-.thumbnail-img{
+
+.thumbnail-img {
   height: 18em;
   width: 20em;
   object-fit: cover;
 }
-.thumbnail-img:hover{
+
+.thumbnail-img:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
 }
 
 /*project*/
-.projectDisplay{
+.projectDisplay {
   background-color: none;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.projectHeader{
+
+.projectHeader {
   font-weight: bold;
 }
-.projectSummary{
+
+.projectSummary {
   font-weight: normal;
   font-size: 18px;
 }
-.projectText{
+
+.projectText {
   background-color: none;
   padding: 15px;
 }
-.techUsed{
-  font-family: "NanumGothicCoding", monospace;
-  font-size: 15px;
+
+.techUsed {
+  font-family: "Pixelated MS Sans Serif", monospace;
+  font-size: 12px;
 }
-.projectLinks{
+
+.projectLinks {
   background-color: none;
 }
-.projectIcon{
+
+.projectIcon {
   display: inline-block;
   margin: 0px 5px;
 }
-.learnMore{
+
+.learnMore {
   border: 1px solid black;
   width: 110px;
   padding: 5px;
@@ -114,23 +128,62 @@ body{
   text-align: center;
   border-radius: 20px;
 }
-a{
+
+a {
   color: black;
   text-decoration: none;
 }
+
 /*sprites*/
-.github{
+.github {
   background: url('assets/sprites.svg') no-repeat -191px -12px;
-	width: 24px;
-	height: 24px;
+  width: 24px;
+  height: 24px;
 }
-.link{
+
+.link {
   background: url('assets/sprites.svg') no-repeat -59px -12px;
-	width: 24px;
-	height: 25px;
+  width: 24px;
+  height: 25px;
 }
-.instagram{
+
+.instagram {
   background: url('assets/sprites.svg') no-repeat -147px -12px;
-	width: 24px;
-	height: 25px;
+  width: 24px;
+  height: 25px;
+}
+/*exhibitions*/
+#exhibition-details{
+  margin: 1em;
+}
+#exhibition-img{
+  width: 40%;
+  margin: 1em;
+}
+
+/*MEDIA TAGS*/
+/* Mobile – Screen Sizes ≤ 767px */
+@media(max-width: 767px) {
+  body {
+    margin: 1em;
+  }
+
+  #homepage-text {
+    font-size: 0.9em;
+    width: 80%;
+    left: 15%;
+    top: 30%;
+  }
+  #exhibition-details{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    float: none;
+  }
+  #exhibition-img{
+    display: block;
+    float: none;
+    margin: auto;
+    width: 100%;
+  }
 }

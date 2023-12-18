@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- metatags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Willow Red's portfolio website">
+        <meta name="keywords"
+            content="HTML, CSS, JavaScript, Portfolio, Art, Design, WillowRed">
+        <meta name="author" content="Sara Alvarado">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous">
+        <!--windows98 css-->
+        <link rel="stylesheet" href="98css/style.css">
+        <!--my css-->
+        <link href="style.css" rel="stylesheet">
+        <title>Willow Red - Black Box</title>
+        <!-- Specific Theme per Page -->
+        <style>
+            .detail-img{
+                margin-top: 1em;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <!-- Overall Container -->
+        <div class="container">
+            <!--nav-column-->
+            <div class="row therow">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-2">
+
+                    <div id="logo-header" class="row">
+                        <a href="index.html"><img src="assets/logoGif.gif"
+                                class="img-fluid"
+                                alt="WillowRed logo"></a>
+                    </div>
+
+                    <div class="window" style="width: 100%">
+                        <div class="title-bar">
+                            <div class="title-bar-text">Navigation</div>
+                            <div class="title-bar-controls">
+                                <button aria-label="Minimize"></button>
+                                <button aria-label="Maximize"></button>
+                                <button aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="window-body">
+                            <div id="sidebar-button-container">
+                                <button
+                                    onclick="window.location.href='artPage.html';"
+                                    class="sidebar-button">Art</button>
+                                <button
+                                    onclick="window.location.href='illusPage.html';"
+                                    class="sidebar-button">Illustration</button>
+                                <button
+                                    onclick="window.location.href='fun.html';"
+                                    class="sidebar-button">Code</button>
+                                <button
+                                    onclick="window.location.href='photo.html';"
+                                    class="sidebar-button">Photo</button>
+                                <button
+                                    onclick="window.location.href='blackBox.html';"
+                                    class="sidebar-button">Black Box</button>
+                                <button
+                                    onclick="window.location.href='about.html';"
+                                    class="sidebar-button">About</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of nav bar -->
+
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-9 ms-lg-5 mt-lg-0 mt-4">
+                    <div class="window clearfix mb-3" style="width: 100%">
+                        <div class="title-bar">
+                            <div class="pg-header-text title-bar-text">Black Box ‧₊˚✩彡 </div>
+                            <div class="title-bar-controls">
+                                <button aria-label="Help"></button>
+                                <button aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="float-start" id="exhibition-details">
+                            <h5 class="fw-bold">Opening</h5>
+                            <p class="status-bar-field mb-1 fs-6">November 16th, 6-8pm</p>
+                            <h5 class="fw-bold">On View</h5>
+                            <p class="status-bar-field mb-1 fs-6">November 17th - 29th, 2023</p>
+                            <h5 class="fw-bold">Location</h5>
+                            <p class="status-bar-field mb-1 fs-6">Gayle and Ed Roski Gallery<br>USC Roski Studios
+                                Building<br>Los Angeles, CA</p>
+                        </div>
+                        <img id="exhibition-img" class="float-end" src="assets/art/blackbox.png"
+                            alt="Black Box promo flyer.">
+                    </div>
+                    <h4>About the Exhibition</h4>
+                    <p>The “Black Box” refers to a system with inputs and
+                        outputs, but unknown inner workings. Inspired by online
+                        spaces, code, and characters, Sara's work explores the
+                        intersection of logic and creativity and of reality and
+                        fantasy.</p>
+                    <img class="img-fluid" src="assets/art/blackbox1.JPG"
+                        alt="Black box exhibition space overview.">
+                    <img class="img-fluid detail-img" src="assets/art/blackbox2.JPG"
+                        alt="Black box exhibition space overview.">
+                    <img class="img-fluid detail-img" src="assets/art/blackbox3.JPG"
+                        alt="Detail image of black box.">
+                        <p><em>Identity Verification (MooMan)</em> (left), <em>Identity Verification (WillowRed)</em> (right), <em>Untitled Photo</em>, 2023
+                        <br>Graphite on paper, dithered photo print</p>
+                    <img class="img-fluid detail-img" src="assets/art/blackbox4.JPG"
+                        alt="Black box exhibition space overview.">
+                        <p><em>Random Access Memory (Ordered Dithering)</em>, 2023
+                            <br>Dithered photo prints</p>
+                    <img class="img-fluid detail-img" src="assets/art/blackbox5.JPG"
+                        alt="Black box exhibition space overview.">
+                    <img class="img-fluid detail-img" src="assets/art/blackbox6.JPG"
+                        alt="Black box exhibition space overview.">
+                        <p><em>Generation</em> (left), <em>Electronic Life Art</em> (right), <em>Untitled Photo</em>, 2023
+                            <br>Digital collage, dithered photo print</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
